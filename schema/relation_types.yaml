@@ -1,0 +1,19 @@
+BELONGS_TO:
+  from: [Topic, Tool, Project]
+  to: [Domain]
+
+USES:
+  from: [Project, Artifact]
+  to: [Tool]
+
+COVERS:
+  from: [Project, Artifact, Certification]
+  to: [Topic, Tool]
+
+HAS:
+  from: [Project]
+  to: [Artifact]
+
+PREREQ:
+  from: [Topic]
+  to: [Topic]

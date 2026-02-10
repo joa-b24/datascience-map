@@ -1,0 +1,25 @@
+nodes:
+# -------------------- DOMAINS -----------------------
+  - id: physics
+    type: Domain
+    name: "Physics"
+    status: in_progress
+    path: "nodes/domains/physics.md"
+    tags: ["physics"]
+
+  # -------------------- Topics --------------------------
+  - id: derivatives
+    type: Topic
+    name: "Derivatives"
+    status: in_progress
+    path: "nodes/topics/derivatives.md"
+    tags: ["calculus", "F1003B", "MA1028"]
+
+  - id: integrals
+    type: Topic
+    name: "Integrals"
+    status: in_progress
+    path: "nodes/topics/integrals.md"
+    tags: ["calculus", "F1003B", "MA1028"]
+
+  

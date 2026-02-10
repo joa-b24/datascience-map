@@ -1,0 +1,12 @@
+Domain:
+  description: Área de alto nivel para agrupar y navegar.
+Topic:
+  description: Concepto teórico o metodológico (concepto + método combinados).
+Tool:
+  description: Lenguaje/biblioteca/plataforma/servicio.
+Project:
+  description: Trabajo aplicado completado y compartible.
+Artifact:
+  description: Entregable/evidencia final (informe, notebook, cheatsheet, diapositivas, video, demo).
+Certification:
+  description: Credencial o distintivo formal.

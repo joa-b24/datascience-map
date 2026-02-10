@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Knowledge Map – Graph Viewer</title>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <style>
+    body { margin: 0; font-family: system-ui, sans-serif; }
+    #topbar {
+      position: fixed; top: 0; left: 0; right: 0;
+      background: white; border-bottom: 1px solid #eee;
+      padding: 10px 12px; display: flex; gap: 10px; align-items: center;
+      z-index: 10;
+    }
+    #topbar input, #topbar select { padding: 6px 8px; }
+    #info {
+      position: fixed; right: 12px; top: 56px; width: 320px;
+      background: rgba(255,255,255,0.96); border: 1px solid #eee;
+      border-radius: 12px; padding: 12px;
+      box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+      max-height: 80vh; overflow: auto;
+    }
+    #info h3 { margin: 0 0 8px 0; font-size: 16px; }
+    #info .meta { color: #666; font-size: 12px; margin-bottom: 6px; }
+    #info code { font-size: 12px; }
+    svg { display: block; width: 100vw; height: 100vh; }
+    .link { stroke: #bbb; stroke-opacity: 0.5; }
+    .node { cursor: grab; }
+    .label { font-size: 10px; pointer-events: none; fill: #222; }
+  </style>
+</head>
+<body>
+  <div id="topbar">
+    <strong>Knowledge Map</strong>
+    <input id="search" placeholder="Search id/name/tag..." size="28" />
+    <select id="filterType">
+      <option value="">All types</option>
+    </select>
+    <label style="font-size:12px;color:#555;">
+      Max nodes:
+      <input id="maxNodes" type="number" value="180" min="50" max="800" style="width:80px;">
+    </label>
+    <span id="counts" style="color:#666;font-size:12px;"></span>
+  </div>
+
+  <div id="info">
+    <h3>Click a node</h3>
+    <div class="meta">Tip: drag nodes, scroll to zoom.</div>
+  </div>
+
+  <svg></svg>
+
+  <script>
+    const svg = d3.select("svg");
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+
+    const g = svg.append("g");
+
+    const zoom = d3.zoom()
+      .scaleExtent([0.05, 6])
+      .on("zoom", (event) => g.attr("transform", event.transform));
+
+    svg.call(zoom);
+
+    function safe(s) { return (s ?? "").toString(); }
+
+    function showInfo(n) {
+      const info = document.getElementById("info");
+      const tags = (n.tags || []).map(t => `<code>${t}</code>`).join(" ");
+      info.innerHTML = `
+        <h3>${safe(n.name || n.id)}</h3>
+        <div class="meta">type: <code>${n.type}</code> • status: <code>${safe(n.status || "unknown")}</code></div>
+        <div class="meta">id: <code>${n.id}</code></div>
+        ${n.path ? `<div class="meta">md: <code>${n.path}</code></div>` : ""}
+        ${tags ? `<div class="meta">tags: ${tags}</div>` : `<div class="meta">tags: —</div>`}
+      `;
+    }
+
+    function buildGraph(allNodes, allEdges, opts) {
+      const { query, typeFilter, maxNodes } = opts;
+
+      // Filter nodes by query/type
+      const filtered = allNodes.filter(n => {
+        if (typeFilter && n.type !== typeFilter) return false;
+        if (!query) return true;
+        const hay = [
+          n.id, n.type, n.name,
+          ...(n.tags || [])
+        ].filter(Boolean).join(" ").toLowerCase();
+        return hay.includes(query);
+      });
+
+      // Limit nodes (keep first N for performance)
+      const nodes = filtered.slice(0, maxNodes);
+
+      const keep = new Set(nodes.map(n => n.id));
+      const edges = allEdges
+        .filter(e => keep.has(e.from) && keep.has(e.to))
+        .slice(0, maxNodes * 3); // soft cap
+
+      return { nodes, edges };
+    }
+
+    async function main() {
+      const res = await fetch("./build/graph.json");
+      const graph = await res.json();
+      const allNodes = graph.nodes || [];
+      const allEdges = graph.edges || [];
+
+      // Fill type filter options
+      const types = Array.from(new Set(allNodes.map(n => n.type))).sort();
+      const filterType = document.getElementById("filterType");
+      for (const t of types) {
+        const opt = document.createElement("option");
+        opt.value = t; opt.textContent = t;
+        filterType.appendChild(opt);
+      }
+
+      const search = document.getElementById("search");
+      const maxNodesInput = document.getElementById("maxNodes");
+      const counts = document.getElementById("counts");
+
+      let simulation, linkSel, nodeSel, labelSel;
+
+      function render() {
+        const query = search.value.trim().toLowerCase();
+        const typeFilter = filterType.value;
+        const maxNodes = parseInt(maxNodesInput.value || "180", 10);
+
+        const { nodes, edges } = buildGraph(allNodes, allEdges, { query, typeFilter, maxNodes });
+        counts.textContent = `nodes: ${nodes.length} • edges: ${edges.length}`;
+
+        // Clear previous
+        g.selectAll("*").remove();
+
+        const link = g.append("g")
+          .attr("stroke-width", 1)
+          .selectAll("line")
+          .data(edges)
+          .join("line")
+          .attr("class", "link");
+
+        const node = g.append("g")
+          .selectAll("circle")
+          .data(nodes)
+          .join("circle")
+          .attr("class", "node")
+          .attr("r", d => d.type === "Domain" ? 8 : 5)
+          .attr("fill", d => d.type === "Domain" ? "#111" : "#666")
+          .call(d3.drag()
+            .on("start", (event, d) => {
+              if (!event.active) simulation.alphaTarget(0.3).restart();
+              d.fx = d.x; d.fy = d.y;
+            })
+            .on("drag", (event, d) => { d.fx = event.x; d.fy = event.y; })
+            .on("end", (event, d) => {
+              if (!event.active) simulation.alphaTarget(0);
+              d.fx = null; d.fy = null;
+            })
+          )
+          .on("click", (_, d) => showInfo(d));
+
+        const labels = g.append("g")
+          .selectAll("text")
+          .data(nodes)
+          .join("text")
+          .attr("class", "label")
+          .text(d => d.name || d.id);
+
+        const idToNode = new Map(nodes.map(n => [n.id, n]));
+        const links = edges.map(e => ({
+          source: idToNode.get(e.from),
+          target: idToNode.get(e.to),
+          relation: e.relation
+        })).filter(l => l.source && l.target);
+
+        simulation = d3.forceSimulation(nodes)
+          .force("link", d3.forceLink(links).id(d => d.id).distance(38))
+          .force("charge", d3.forceManyBody().strength(-140))
+          .force("center", d3.forceCenter(width / 2, height / 2))
+          .force("collide", d3.forceCollide().radius(10))
+          .on("tick", () => {
+            link
+              .attr("x1", d => idToNode.get(d.from)?.x ?? 0)
+              .attr("y1", d => idToNode.get(d.from)?.y ?? 0)
+              .attr("x2", d => idToNode.get(d.to)?.x ?? 0)
+              .attr("y2", d => idToNode.get(d.to)?.y ?? 0);
+
+            node
+              .attr("cx", d => d.x)
+              .attr("cy", d => d.y);
+
+            labels
+              .attr("x", d => d.x + 8)
+              .attr("y", d => d.y + 3);
+          });
+      }
+
+      search.addEventListener("input", render);
+      filterType.addEventListener("change", render);
+      maxNodesInput.addEventListener("change", render);
+
+      render();
+    }
+
+    main();
+  </script>
+</body>
+</html>

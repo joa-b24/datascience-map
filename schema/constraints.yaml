@@ -1,0 +1,12 @@
+conventions:
+  id_pattern: "^[a-z0-9_]+$"
+  status_values: [planned, in_progress, solid, archived]
+
+rules:
+  topic_must_belong_to_one_domain: true
+  project_must_use_at_least_one_tool: true
+  project_must_cover_something: true
+  artifact_must_be_attached_or_cover: true
+
+limits:
+  prereq_max_out_degree_per_topic: 3

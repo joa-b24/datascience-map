@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Knowledge Map Preview</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 24px; }
+    input { padding: 8px; width: 420px; }
+    .row { display: flex; gap: 16px; align-items: center; margin-bottom: 12px; }
+    .pill { padding: 2px 8px; border: 1px solid #ccc; border-radius: 999px; font-size: 12px; }
+    .node { padding: 10px 0; border-bottom: 1px solid #eee; }
+    .meta { color: #666; font-size: 12px; }
+    a { color: #0a66c2; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <h1>Knowledge Map Preview</h1>
+  <div class="row">
+    <input id="q" placeholder="Search by name / id / tag..." />
+    <span id="counts" class="meta"></span>
+  </div>
+  <div id="list"></div>
+
+  <script>
+    async function main() {
+      const res = await fetch('../build/graph.json');
+      const graph = await res.json();
+
+      const nodes = graph.nodes || [];
+      const list = document.getElementById('list');
+      const q = document.getElementById('q');
+      const counts = document.getElementById('counts');
+
+      function render() {
+        const s = (q.value || '').toLowerCase().trim();
+        const filtered = nodes.filter(n => {
+          const hay = [
+            n.id, n.type, n.name,
+            ...(n.tags || [])
+          ].filter(Boolean).join(' ').toLowerCase();
+          return hay.includes(s);
+        });
+
+        counts.textContent = `Showing ${filtered.length} / ${nodes.length} nodes`;
+
+        list.innerHTML = filtered.slice(0, 400).map(n => {
+          const tags = (n.tags || []).slice(0, 8).map(t => `<span class="pill">${t}</span>`).join(' ');
+          const path = n.path ? `<div class="meta">MD: <code>${n.path}</code></div>` : '';
+          return `
+            <div class="node">
+              <div><strong>${n.name || n.id}</strong> <span class="pill">${n.type}</span></div>
+              <div class="meta">id: <code>${n.id}</code></div>
+              <div>${tags}</div>
+              ${path}
+            </div>
+          `;
+        }).join('');
+      }
+
+      q.addEventListener('input', render);
+      render();
+    }
+
+    main();
+  </script>
+</body>
+</html>

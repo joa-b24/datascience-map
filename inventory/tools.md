@@ -1,0 +1,21 @@
+# Tools backlog
+- [ ] Python
+- [ ] R
+- [ ] MatLab
+- [ ] Cypher
+- [ ] SQL
+- [ ] HTML
+- [ ] XML
+- [ ] XSL
+- [ ] CSS
+- [ ] JS
+- [ ] Java
+- [ ] C++
+- [ ] Mongo DB
+- [ ] Neo4j
+- [ ] SpringBoot
+- [ ] Mockaroo
+- [ ] Github
+- [ ] Power BI
+- [ ] Excel
+- [ ] 

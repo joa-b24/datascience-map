@@ -1,0 +1,1772 @@
+{
+  "meta": {
+    "name": "knowledge-map",
+    "exported_at": "2026-01-31T01:36:34.650230Z"
+  },
+  "nodes": [
+    {
+      "id": "physics",
+      "type": "Domain",
+      "name": "Physics",
+      "status": "in_progress",
+      "path": "nodes/domains/physics.md",
+      "tags": [
+        "physics"
+      ]
+    },
+    {
+      "id": "applied_mathematics",
+      "type": "Domain",
+      "name": "Applied Mathematics",
+      "status": "in_progress",
+      "path": "nodes/domains/applied_mathematics.md",
+      "tags": [
+        "math"
+      ]
+    },
+    {
+      "id": "engineering_modeling",
+      "type": "Domain",
+      "name": "Engineering Modeling",
+      "status": "in_progress",
+      "path": "nodes/domains/engineering_modeling.md",
+      "tags": [
+        "modeling"
+      ]
+    },
+    {
+      "id": "fluid_mechanics",
+      "type": "Domain",
+      "name": "Fluid Mechanics",
+      "status": "in_progress",
+      "path": "nodes/domains/fluid_mechanics.md",
+      "tags": [
+        "fluids"
+      ]
+    },
+    {
+      "id": "chemistry",
+      "type": "Domain",
+      "name": "Chemistry",
+      "status": "in_progress",
+      "path": "nodes/domains/chemistry.md",
+      "tags": [
+        "chemistry"
+      ]
+    },
+    {
+      "id": "materials_science",
+      "type": "Domain",
+      "name": "Materials Science",
+      "status": "in_progress",
+      "path": "nodes/domains/materials_science.md",
+      "tags": [
+        "materials"
+      ]
+    },
+    {
+      "id": "environmental_engineering",
+      "type": "Domain",
+      "name": "Environmental Engineering",
+      "status": "in_progress",
+      "path": "nodes/domains/environmental_engineering.md",
+      "tags": [
+        "environment"
+      ]
+    },
+    {
+      "id": "mathematical_modeling",
+      "type": "Domain",
+      "name": "Mathematical Modeling",
+      "status": "planned",
+      "path": "nodes/domains/mathematical_modeling.md",
+      "tags": [
+        "modeling"
+      ]
+    },
+    {
+      "id": "classical_mechanics",
+      "type": "Domain",
+      "name": "Classical Mechanics",
+      "status": "planned",
+      "path": "nodes/domains/classical_mechanics.md",
+      "tags": [
+        "physics"
+      ]
+    },
+    {
+      "id": "data_analysis",
+      "type": "Domain",
+      "name": "Data Analysis",
+      "status": "planned",
+      "path": "nodes/domains/data_analysis.md",
+      "tags": [
+        "data"
+      ]
+    },
+    {
+      "id": "process_engineering",
+      "type": "Domain",
+      "name": "Process Engineering",
+      "status": "planned",
+      "path": "nodes/domains/process_engineering.md",
+      "tags": [
+        "engineering"
+      ]
+    },
+    {
+      "id": "bioengineering_processes",
+      "type": "Domain",
+      "name": "Bioengineering Processes",
+      "status": "planned",
+      "path": "nodes/domains/bioengineering_processes.md",
+      "tags": [
+        "bioengineering"
+      ]
+    },
+    {
+      "id": "environmental_modeling",
+      "type": "Domain",
+      "name": "Environmental Modeling",
+      "status": "planned",
+      "path": "nodes/domains/environmental_modeling.md",
+      "tags": [
+        "environment"
+      ]
+    },
+    {
+      "id": "numerical_methods",
+      "type": "Domain",
+      "name": "Numerical Methods",
+      "status": "planned",
+      "path": "nodes/domains/numerical_methods.md",
+      "tags": [
+        "numerical"
+      ]
+    },
+    {
+      "id": "programming_fundamentals",
+      "type": "Domain",
+      "name": "Programming Fundamentals",
+      "status": "planned",
+      "path": "nodes/domains/programming_fundamentals.md",
+      "tags": [
+        "programming"
+      ]
+    },
+    {
+      "id": "object_oriented_programming",
+      "type": "Domain",
+      "name": "Object-Oriented Programming",
+      "status": "planned",
+      "path": "nodes/domains/object_oriented_programming.md",
+      "tags": [
+        "programming"
+      ]
+    },
+    {
+      "id": "software_design",
+      "type": "Domain",
+      "name": "Software Design",
+      "status": "planned",
+      "path": "nodes/domains/software_design.md",
+      "tags": [
+        "software"
+      ]
+    },
+    {
+      "id": "derivatives",
+      "type": "Topic",
+      "name": "Derivatives",
+      "status": "in_progress",
+      "path": "nodes/topics/derivatives.md",
+      "tags": [
+        "calculus",
+        "F1003B",
+        "MA1028"
+      ]
+    },
+    {
+      "id": "integrals",
+      "type": "Topic",
+      "name": "Integrals",
+      "status": "in_progress",
+      "path": "nodes/topics/integrals.md",
+      "tags": [
+        "calculus",
+        "F1003B",
+        "MA1028"
+      ]
+    },
+    {
+      "id": "kinematics",
+      "type": "Topic",
+      "name": "Kinematics",
+      "status": "in_progress",
+      "path": "nodes/topics/kinematics.md",
+      "tags": [
+        "mechanics",
+        "F1003B",
+        "F1002B",
+        "F1008"
+      ]
+    },
+    {
+      "id": "work_and_energy",
+      "type": "Topic",
+      "name": "Work and Energy",
+      "status": "in_progress",
+      "path": "nodes/topics/work_and_energy.md",
+      "tags": [
+        "mechanics",
+        "F1003B",
+        "F1008"
+      ]
+    },
+    {
+      "id": "conservation_of_energy",
+      "type": "Topic",
+      "name": "Conservation of Energy",
+      "status": "in_progress",
+      "path": "nodes/topics/conservation_of_energy.md",
+      "tags": [
+        "mechanics",
+        "F1003B",
+        "F1008"
+      ]
+    },
+    {
+      "id": "bernoulli_equation",
+      "type": "Topic",
+      "name": "Bernoulli Equation",
+      "status": "in_progress",
+      "path": "nodes/topics/bernoulli_equation.md",
+      "tags": [
+        "fluids",
+        "F1003B",
+        "F1008"
+      ]
+    },
+    {
+      "id": "fluid_dynamics_basics",
+      "type": "Topic",
+      "name": "Fluid Dynamics Basics",
+      "status": "in_progress",
+      "path": "nodes/topics/fluid_dynamics_basics.md",
+      "tags": [
+        "fluids",
+        "F1003B",
+        "F1008"
+      ]
+    },
+    {
+      "id": "linear_momentum",
+      "type": "Topic",
+      "name": "Linear Momentum",
+      "status": "in_progress",
+      "path": "nodes/topics/linear_momentum.md",
+      "tags": [
+        "mechanics",
+        "F1003B"
+      ]
+    },
+    {
+      "id": "impulse_and_collisions",
+      "type": "Topic",
+      "name": "Impulse and Collisions",
+      "status": "in_progress",
+      "path": "nodes/topics/impulse_and_collisions.md",
+      "tags": [
+        "mechanics",
+        "F1003B"
+      ]
+    },
+    {
+      "id": "angular_momentum",
+      "type": "Topic",
+      "name": "Angular Momentum",
+      "status": "in_progress",
+      "path": "nodes/topics/angular_momentum.md",
+      "tags": [
+        "mechanics",
+        "F1003B"
+      ]
+    },
+    {
+      "id": "center_of_mass",
+      "type": "Topic",
+      "name": "Center of Mass",
+      "status": "in_progress",
+      "path": "nodes/topics/center_of_mass.md",
+      "tags": [
+        "mechanics",
+        "F1003B"
+      ]
+    },
+    {
+      "id": "numerical_integration",
+      "type": "Topic",
+      "name": "Numerical Integration",
+      "status": "in_progress",
+      "path": "nodes/topics/numerical_integration.md",
+      "tags": [
+        "numerical",
+        "F1003B",
+        "F1002B",
+        "F1014B"
+      ]
+    },
+    {
+      "id": "rectangular_and_trapezoidal_integration_rules",
+      "type": "Topic",
+      "name": "Rectangular and Trapezoidal Integration Rules",
+      "status": "in_progress",
+      "path": "nodes/topics/rectangular_and_trapezoidal_integration_rules.md",
+      "tags": [
+        "numerical",
+        "F1003B"
+      ]
+    },
+    {
+      "id": "mathematical_modeling_topic",
+      "type": "Topic",
+      "name": "Mathematical Modeling",
+      "status": "planned",
+      "path": "nodes/topics/mathematical_modeling.md",
+      "tags": [
+        "modeling",
+        "F1001B"
+      ]
+    },
+    {
+      "id": "ellipse_equations",
+      "type": "Topic",
+      "name": "Ellipse Equations",
+      "status": "planned",
+      "path": "nodes/topics/ellipse_equations.md",
+      "tags": [
+        "math",
+        "F1001B"
+      ]
+    },
+    {
+      "id": "keplers_laws",
+      "type": "Topic",
+      "name": "Kepler's Laws",
+      "status": "planned",
+      "path": "nodes/topics/keplers_laws.md",
+      "tags": [
+        "physics",
+        "F1001B"
+      ]
+    },
+    {
+      "id": "newtons_laws_of_motion",
+      "type": "Topic",
+      "name": "Newton's Laws of Motion",
+      "status": "planned",
+      "path": "nodes/topics/newtons_laws_of_motion.md",
+      "tags": [
+        "mechanics",
+        "F1001B",
+        "F1002B"
+      ]
+    },
+    {
+      "id": "static_equilibrium",
+      "type": "Topic",
+      "name": "Static Equilibrium",
+      "status": "planned",
+      "path": "nodes/topics/static_equilibrium.md",
+      "tags": [
+        "mechanics",
+        "F1001B"
+      ]
+    },
+    {
+      "id": "torque",
+      "type": "Topic",
+      "name": "Torque",
+      "status": "planned",
+      "path": "nodes/topics/torque.md",
+      "tags": [
+        "mechanics",
+        "F1001B"
+      ]
+    },
+    {
+      "id": "force_analysis",
+      "type": "Topic",
+      "name": "Force Analysis",
+      "status": "planned",
+      "path": "nodes/topics/force_analysis.md",
+      "tags": [
+        "mechanics",
+        "F1001B"
+      ]
+    },
+    {
+      "id": "linear_regression",
+      "type": "Topic",
+      "name": "Linear Regression",
+      "status": "planned",
+      "path": "nodes/topics/linear_regression.md",
+      "tags": [
+        "data",
+        "F1001B",
+        "MA1031"
+      ]
+    },
+    {
+      "id": "non_linear_regression",
+      "type": "Topic",
+      "name": "Non-linear Regression",
+      "status": "planned",
+      "path": "nodes/topics/non_linear_regression.md",
+      "tags": [
+        "data",
+        "F1001B"
+      ]
+    },
+    {
+      "id": "data_visualization",
+      "type": "Topic",
+      "name": "Data Visualization",
+      "status": "planned",
+      "path": "nodes/topics/data_visualization.md",
+      "tags": [
+        "data",
+        "F1001B",
+        "MA1031"
+      ]
+    },
+    {
+      "id": "process_modeling",
+      "type": "Topic",
+      "name": "Process Modeling",
+      "status": "planned",
+      "path": "nodes/topics/process_modeling.md",
+      "tags": [
+        "modeling",
+        "F1001B"
+      ]
+    },
+    {
+      "id": "average_and_instantaneous_velocity_and_acceleration",
+      "type": "Topic",
+      "name": "Average and Instantaneous Velocity and Acceleration",
+      "status": "planned",
+      "path": "nodes/topics/average_and_instantaneous_velocity_and_acceleration.md",
+      "tags": [
+        "kinematics",
+        "F1002B"
+      ]
+    },
+    {
+      "id": "piecewise_functions",
+      "type": "Topic",
+      "name": "Piecewise Functions",
+      "status": "planned",
+      "path": "nodes/topics/piecewise_functions.md",
+      "tags": [
+        "math",
+        "F1002B"
+      ]
+    },
+    {
+      "id": "vector_functions",
+      "type": "Topic",
+      "name": "Vector Functions",
+      "status": "planned",
+      "path": "nodes/topics/vector_functions.md",
+      "tags": [
+        "math",
+        "F1002B"
+      ]
+    },
+    {
+      "id": "vectors_and_kinematics_one_two_dimensions",
+      "type": "Topic",
+      "name": "Vectors and Kinematics in One and Two Dimensions",
+      "status": "planned",
+      "path": "nodes/topics/vectors_and_kinematics_one_two_dimensions.md",
+      "tags": [
+        "kinematics",
+        "F1002B"
+      ]
+    },
+    {
+      "id": "circular_motion",
+      "type": "Topic",
+      "name": "Circular Motion",
+      "status": "planned",
+      "path": "nodes/topics/circular_motion.md",
+      "tags": [
+        "kinematics",
+        "F1002B"
+      ]
+    },
+    {
+      "id": "air_resistance",
+      "type": "Topic",
+      "name": "Air Resistance",
+      "status": "planned",
+      "path": "nodes/topics/air_resistance.md",
+      "tags": [
+        "mechanics",
+        "F1002B"
+      ]
+    },
+    {
+      "id": "simple_harmonic_motion",
+      "type": "Topic",
+      "name": "Simple Harmonic Motion",
+      "status": "planned",
+      "path": "nodes/topics/simple_harmonic_motion.md",
+      "tags": [
+        "mechanics",
+        "F1002B"
+      ]
+    },
+    {
+      "id": "euler_method",
+      "type": "Topic",
+      "name": "Euler Method",
+      "status": "planned",
+      "path": "nodes/topics/euler_method.md",
+      "tags": [
+        "numerical",
+        "F1002B",
+        "F1014B"
+      ]
+    },
+    {
+      "id": "power_functions_and_their_derivatives",
+      "type": "Topic",
+      "name": "Power Functions and Their Derivatives",
+      "status": "planned",
+      "path": "nodes/topics/power_functions_and_their_derivatives.md",
+      "tags": [
+        "calculus",
+        "MA1028"
+      ]
+    },
+    {
+      "id": "antiderivatives",
+      "type": "Topic",
+      "name": "Antiderivatives",
+      "status": "planned",
+      "path": "nodes/topics/antiderivatives.md",
+      "tags": [
+        "calculus",
+        "MA1028"
+      ]
+    },
+    {
+      "id": "optimization",
+      "type": "Topic",
+      "name": "Optimization",
+      "status": "planned",
+      "path": "nodes/topics/optimization.md",
+      "tags": [
+        "math",
+        "MA1028",
+        "MA1029"
+      ]
+    },
+    {
+      "id": "concavity_and_inflection_points",
+      "type": "Topic",
+      "name": "Concavity and Inflection Points",
+      "status": "planned",
+      "path": "nodes/topics/concavity_and_inflection_points.md",
+      "tags": [
+        "calculus",
+        "MA1028"
+      ]
+    },
+    {
+      "id": "introduction_to_c_plus_plus",
+      "type": "Topic",
+      "name": "Introduction to C++",
+      "status": "planned",
+      "path": "nodes/topics/introduction_to_c_plus_plus.md",
+      "tags": [
+        "programming",
+        "TC1033",
+        "TC1030"
+      ]
+    },
+    {
+      "id": "structured_data_in_c_plus_plus",
+      "type": "Topic",
+      "name": "Structured Data in C++",
+      "status": "planned",
+      "path": "nodes/topics/structured_data_in_c_plus_plus.md",
+      "tags": [
+        "programming",
+        "TC1033",
+        "TC1030"
+      ]
+    },
+    {
+      "id": "control_structures",
+      "type": "Topic",
+      "name": "Control Structures",
+      "status": "planned",
+      "path": "nodes/topics/control_structures.md",
+      "tags": [
+        "programming",
+        "TC1033",
+        "TC1030"
+      ]
+    },
+    {
+      "id": "functions_topic",
+      "type": "Topic",
+      "name": "Functions",
+      "status": "planned",
+      "path": "nodes/topics/functions.md",
+      "tags": [
+        "programming",
+        "TC1033",
+        "TC1030"
+      ]
+    },
+    {
+      "id": "oop_concepts",
+      "type": "Topic",
+      "name": "Object-Oriented Programming Concepts",
+      "status": "planned",
+      "path": "nodes/topics/oop_concepts.md",
+      "tags": [
+        "programming",
+        "TC1033",
+        "TC1030"
+      ]
+    },
+    {
+      "id": "class_modeling_from_scenarios",
+      "type": "Topic",
+      "name": "Class Modeling from Scenarios",
+      "status": "planned",
+      "path": "nodes/topics/class_modeling_from_scenarios.md",
+      "tags": [
+        "software",
+        "TC1033",
+        "TC1030"
+      ]
+    },
+    {
+      "id": "class_implementation_in_c_plus_plus",
+      "type": "Topic",
+      "name": "Class Implementation in C++",
+      "status": "planned",
+      "path": "nodes/topics/class_implementation_in_c_plus_plus.md",
+      "tags": [
+        "software",
+        "TC1033",
+        "TC1030"
+      ]
+    },
+    {
+      "id": "uml_diagrams",
+      "type": "Topic",
+      "name": "UML Diagrams",
+      "status": "planned",
+      "path": "nodes/topics/uml_diagrams.md",
+      "tags": [
+        "software",
+        "TC1033",
+        "TC1030"
+      ]
+    },
+    {
+      "id": "periodic_properties_of_elements",
+      "type": "Topic",
+      "name": "Periodic Properties of Elements",
+      "status": "in_progress",
+      "path": "nodes/topics/periodic_properties_of_elements.md",
+      "tags": [
+        "chemistry",
+        "Q1028"
+      ]
+    },
+    {
+      "id": "chemical_bonding",
+      "type": "Topic",
+      "name": "Chemical Bonding",
+      "status": "in_progress",
+      "path": "nodes/topics/chemical_bonding.md",
+      "tags": [
+        "chemistry",
+        "Q1028"
+      ]
+    },
+    {
+      "id": "lewis_structures",
+      "type": "Topic",
+      "name": "Lewis Structures",
+      "status": "in_progress",
+      "path": "nodes/topics/lewis_structures.md",
+      "tags": [
+        "chemistry",
+        "Q1028"
+      ]
+    },
+    {
+      "id": "molecular_geometry",
+      "type": "Topic",
+      "name": "Molecular Geometry",
+      "status": "in_progress",
+      "path": "nodes/topics/molecular_geometry.md",
+      "tags": [
+        "chemistry",
+        "Q1028"
+      ]
+    },
+    {
+      "id": "molecular_polarity",
+      "type": "Topic",
+      "name": "Molecular Polarity",
+      "status": "in_progress",
+      "path": "nodes/topics/molecular_polarity.md",
+      "tags": [
+        "chemistry",
+        "Q1028"
+      ]
+    },
+    {
+      "id": "intermolecular_forces",
+      "type": "Topic",
+      "name": "Intermolecular Forces",
+      "status": "in_progress",
+      "path": "nodes/topics/intermolecular_forces.md",
+      "tags": [
+        "chemistry",
+        "Q1028"
+      ]
+    },
+    {
+      "id": "solubility",
+      "type": "Topic",
+      "name": "Solubility",
+      "status": "in_progress",
+      "path": "nodes/topics/solubility.md",
+      "tags": [
+        "chemistry",
+        "Q1028"
+      ]
+    },
+    {
+      "id": "ideal_and_real_gases",
+      "type": "Topic",
+      "name": "Ideal and Real Gases",
+      "status": "in_progress",
+      "path": "nodes/topics/ideal_and_real_gases.md",
+      "tags": [
+        "chemistry",
+        "Q1028"
+      ]
+    },
+    {
+      "id": "properties_of_liquids",
+      "type": "Topic",
+      "name": "Properties of Liquids",
+      "status": "in_progress",
+      "path": "nodes/topics/properties_of_liquids.md",
+      "tags": [
+        "chemistry",
+        "Q1028"
+      ]
+    },
+    {
+      "id": "solid_structures",
+      "type": "Topic",
+      "name": "Solid Structures",
+      "status": "in_progress",
+      "path": "nodes/topics/solid_structures.md",
+      "tags": [
+        "materials",
+        "Q1028"
+      ]
+    },
+    {
+      "id": "phase_diagrams",
+      "type": "Topic",
+      "name": "Phase Diagrams",
+      "status": "in_progress",
+      "path": "nodes/topics/phase_diagrams.md",
+      "tags": [
+        "materials",
+        "Q1028"
+      ]
+    },
+    {
+      "id": "bioinformatics",
+      "type": "Domain",
+      "name": "Bioinformatics",
+      "status": "planned",
+      "path": "nodes/domains/bioinformatics.md",
+      "tags": [
+        "bioinformatics"
+      ]
+    },
+    {
+      "id": "genomics_and_molecular_biology",
+      "type": "Domain",
+      "name": "Genomics & Molecular Biology",
+      "status": "planned",
+      "path": "nodes/domains/genomics_and_molecular_biology.md",
+      "tags": [
+        "genomics"
+      ]
+    },
+    {
+      "id": "data_analysis_with_r",
+      "type": "Domain",
+      "name": "Data Analysis with R",
+      "status": "planned",
+      "path": "nodes/domains/data_analysis_with_r.md",
+      "tags": [
+        "r",
+        "data"
+      ]
+    },
+    {
+      "id": "r_fundamentals",
+      "type": "Topic",
+      "name": "R Fundamentals",
+      "status": "planned",
+      "path": "nodes/topics/r_fundamentals.md",
+      "tags": [
+        "r",
+        "module:BT1013"
+      ]
+    },
+    {
+      "id": "molecular_biology_and_genomics_basics",
+      "type": "Topic",
+      "name": "Molecular Biology & Genomics Basics",
+      "status": "planned",
+      "path": "nodes/topics/molecular_biology_and_genomics_basics.md",
+      "tags": [
+        "genomics",
+        "module:BT1013"
+      ]
+    },
+    {
+      "id": "dna_replication_transcription_translation",
+      "type": "Topic",
+      "name": "DNA Replication, Transcription, Translation",
+      "status": "planned",
+      "path": "nodes/topics/dna_replication_transcription_translation.md",
+      "tags": [
+        "genomics",
+        "module:BT1013"
+      ]
+    },
+    {
+      "id": "biological_databases",
+      "type": "Topic",
+      "name": "Biological Databases",
+      "status": "planned",
+      "path": "nodes/topics/biological_databases.md",
+      "tags": [
+        "bioinformatics",
+        "module:BT1013"
+      ]
+    },
+    {
+      "id": "viruses_and_viral_genomes",
+      "type": "Topic",
+      "name": "Viruses and Viral Genomes",
+      "status": "planned",
+      "path": "nodes/topics/viruses_and_viral_genomes.md",
+      "tags": [
+        "genomics",
+        "module:BT1013"
+      ]
+    },
+    {
+      "id": "literature_search_and_critical_reading",
+      "type": "Topic",
+      "name": "Literature Search & Critical Reading",
+      "status": "planned",
+      "path": "nodes/topics/literature_search_and_critical_reading.md",
+      "tags": [
+        "research",
+        "module:BT1013"
+      ]
+    },
+    {
+      "id": "sequence_alignment",
+      "type": "Topic",
+      "name": "Sequence Alignment",
+      "status": "planned",
+      "path": "nodes/topics/sequence_alignment.md",
+      "tags": [
+        "bioinformatics",
+        "module:BT1013"
+      ]
+    },
+    {
+      "id": "phylogenetics",
+      "type": "Topic",
+      "name": "Phylogenetics",
+      "status": "planned",
+      "path": "nodes/topics/phylogenetics.md",
+      "tags": [
+        "bioinformatics",
+        "module:BT1013"
+      ]
+    },
+    {
+      "id": "statistics",
+      "type": "Domain",
+      "name": "Statistics",
+      "status": "planned",
+      "path": "nodes/domains/statistics.md",
+      "tags": [
+        "statistics"
+      ]
+    },
+    {
+      "id": "regression_modeling",
+      "type": "Domain",
+      "name": "Regression Modeling",
+      "status": "planned",
+      "path": "nodes/domains/regression_modeling.md",
+      "tags": [
+        "regression"
+      ]
+    },
+    {
+      "id": "time_series",
+      "type": "Domain",
+      "name": "Time Series",
+      "status": "planned",
+      "path": "nodes/domains/time_series.md",
+      "tags": [
+        "timeseries"
+      ]
+    },
+    {
+      "id": "correlation_vs_causation",
+      "type": "Topic",
+      "name": "Correlation vs Causation",
+      "status": "planned",
+      "path": "nodes/topics/correlation_vs_causation.md",
+      "tags": [
+        "statistics",
+        "module:MA1031"
+      ]
+    },
+    {
+      "id": "correlation_coefficients",
+      "type": "Topic",
+      "name": "Correlation Coefficients",
+      "status": "planned",
+      "path": "nodes/topics/correlation_coefficients.md",
+      "tags": [
+        "statistics",
+        "module:MA1031"
+      ]
+    },
+    {
+      "id": "time_series_basics",
+      "type": "Topic",
+      "name": "Time Series Basics",
+      "status": "planned",
+      "path": "nodes/topics/time_series_basics.md",
+      "tags": [
+        "timeseries",
+        "module:MA1031"
+      ]
+    },
+    {
+      "id": "tc1030_domain",
+      "type": "Domain",
+      "name": "Advanced OOP",
+      "status": "planned",
+      "path": "nodes/domains/advanced_oop.md",
+      "tags": [
+        "programming"
+      ]
+    },
+    {
+      "id": "electromagnetism_domain",
+      "type": "Domain",
+      "name": "Electromagnetism",
+      "status": "planned",
+      "path": "nodes/domains/electromagnetism.md",
+      "tags": [
+        "electromagnetism"
+      ]
+    },
+    {
+      "id": "electrostatics",
+      "type": "Topic",
+      "name": "Electrostatics",
+      "status": "planned",
+      "path": "nodes/topics/electrostatics.md",
+      "tags": [
+        "electromagnetism",
+        "module:F1013B"
+      ]
+    },
+    {
+      "id": "coulombs_law",
+      "type": "Topic",
+      "name": "Coulomb's Law",
+      "status": "planned",
+      "path": "nodes/topics/coulombs_law.md",
+      "tags": [
+        "electromagnetism",
+        "module:F1013B"
+      ]
+    },
+    {
+      "id": "electric_field",
+      "type": "Topic",
+      "name": "Electric Field",
+      "status": "planned",
+      "path": "nodes/topics/electric_field.md",
+      "tags": [
+        "electromagnetism",
+        "module:F1013B"
+      ]
+    },
+    {
+      "id": "electric_potential",
+      "type": "Topic",
+      "name": "Electric Potential",
+      "status": "planned",
+      "path": "nodes/topics/electric_potential.md",
+      "tags": [
+        "electromagnetism",
+        "module:F1013B"
+      ]
+    },
+    {
+      "id": "gauss_law",
+      "type": "Topic",
+      "name": "Gauss' Law",
+      "status": "planned",
+      "path": "nodes/topics/gauss_law.md",
+      "tags": [
+        "electromagnetism",
+        "module:F1013B"
+      ]
+    },
+    {
+      "id": "capacitance_and_dielectrics",
+      "type": "Topic",
+      "name": "Capacitance and Dielectrics",
+      "status": "planned",
+      "path": "nodes/topics/capacitance_and_dielectrics.md",
+      "tags": [
+        "electromagnetism",
+        "module:F1013B"
+      ]
+    },
+    {
+      "id": "circuit_elements",
+      "type": "Topic",
+      "name": "Circuit Elements",
+      "status": "planned",
+      "path": "nodes/topics/circuit_elements.md",
+      "tags": [
+        "electromagnetism",
+        "module:F1013B"
+      ]
+    },
+    {
+      "id": "kirchhoffs_laws",
+      "type": "Topic",
+      "name": "Kirchhoff's Laws",
+      "status": "planned",
+      "path": "nodes/topics/kirchhoffs_laws.md",
+      "tags": [
+        "electromagnetism",
+        "module:F1013B"
+      ]
+    },
+    {
+      "id": "differential_equations",
+      "type": "Domain",
+      "name": "Differential Equations",
+      "status": "planned",
+      "path": "nodes/domains/differential_equations.md",
+      "tags": [
+        "math"
+      ]
+    },
+    {
+      "id": "rk4",
+      "type": "Topic",
+      "name": "Runge–Kutta 4 (RK4)",
+      "status": "planned",
+      "path": "nodes/topics/rk4.md",
+      "tags": [
+        "numerical",
+        "module:F1014B"
+      ]
+    },
+    {
+      "id": "higher_order_differential_equations",
+      "type": "Topic",
+      "name": "Higher-Order Differential Equations",
+      "status": "planned",
+      "path": "nodes/topics/higher_order_differential_equations.md",
+      "tags": [
+        "math",
+        "module:F1014B"
+      ]
+    },
+    {
+      "id": "numerical_vs_analytical_solutions",
+      "type": "Topic",
+      "name": "Numerical vs Analytical Solutions",
+      "status": "planned",
+      "path": "nodes/topics/numerical_vs_analytical_solutions.md",
+      "tags": [
+        "numerical",
+        "module:F1014B"
+      ]
+    },
+    {
+      "id": "magnetism_fundamentals",
+      "type": "Topic",
+      "name": "Magnetism Fundamentals",
+      "status": "planned",
+      "path": "nodes/topics/magnetism_fundamentals.md",
+      "tags": [
+        "magnetism",
+        "module:F1014B"
+      ]
+    },
+    {
+      "id": "magnetic_field_current_carrying_conductor",
+      "type": "Topic",
+      "name": "Magnetic Field in a Current-Carrying Conductor",
+      "status": "planned",
+      "path": "nodes/topics/magnetic_field_current_carrying_conductor.md",
+      "tags": [
+        "magnetism",
+        "module:F1014B"
+      ]
+    },
+    {
+      "id": "surface_and_line_integrals",
+      "type": "Topic",
+      "name": "Surface/Line Integrals",
+      "status": "planned",
+      "path": "nodes/topics/surface_and_line_integrals.md",
+      "tags": [
+        "math",
+        "module:F1014B"
+      ]
+    },
+    {
+      "id": "multivariable_calculus",
+      "type": "Domain",
+      "name": "Multivariable Calculus",
+      "status": "planned",
+      "path": "nodes/domains/multivariable_calculus.md",
+      "tags": [
+        "calculus"
+      ]
+    },
+    {
+      "id": "scalar_functions_of_several_variables",
+      "type": "Topic",
+      "name": "Scalar Functions of Several Variables",
+      "status": "planned",
+      "path": "nodes/topics/scalar_functions_of_several_variables.md",
+      "tags": [
+        "calculus",
+        "module:MA1029"
+      ]
+    },
+    {
+      "id": "coordinate_systems",
+      "type": "Topic",
+      "name": "Coordinate Systems",
+      "status": "planned",
+      "path": "nodes/topics/coordinate_systems.md",
+      "tags": [
+        "math",
+        "module:MA1029"
+      ]
+    },
+    {
+      "id": "partial_derivatives",
+      "type": "Topic",
+      "name": "Partial Derivatives",
+      "status": "planned",
+      "path": "nodes/topics/partial_derivatives.md",
+      "tags": [
+        "calculus",
+        "module:MA1029"
+      ]
+    },
+    {
+      "id": "total_differential",
+      "type": "Topic",
+      "name": "Total Differential",
+      "status": "planned",
+      "path": "nodes/topics/total_differential.md",
+      "tags": [
+        "calculus",
+        "module:MA1029"
+      ]
+    },
+    {
+      "id": "chain_rule_multivariable",
+      "type": "Topic",
+      "name": "Chain Rule (Multivariable)",
+      "status": "planned",
+      "path": "nodes/topics/chain_rule_multivariable.md",
+      "tags": [
+        "calculus",
+        "module:MA1029"
+      ]
+    },
+    {
+      "id": "directional_derivative",
+      "type": "Topic",
+      "name": "Directional Derivative",
+      "status": "planned",
+      "path": "nodes/topics/directional_derivative.md",
+      "tags": [
+        "calculus",
+        "module:MA1029"
+      ]
+    },
+    {
+      "id": "gradient",
+      "type": "Topic",
+      "name": "Gradient",
+      "status": "planned",
+      "path": "nodes/topics/gradient.md",
+      "tags": [
+        "calculus",
+        "module:MA1029"
+      ]
+    },
+    {
+      "id": "constrained_optimization",
+      "type": "Topic",
+      "name": "Constrained Optimization",
+      "status": "planned",
+      "path": "nodes/topics/constrained_optimization.md",
+      "tags": [
+        "math",
+        "module:MA1029"
+      ]
+    },
+    {
+      "id": "double_integrals",
+      "type": "Topic",
+      "name": "Double Integrals",
+      "status": "planned",
+      "path": "nodes/topics/double_integrals.md",
+      "tags": [
+        "calculus",
+        "module:MA1029"
+      ]
+    },
+    {
+      "id": "triple_integrals",
+      "type": "Topic",
+      "name": "Triple Integrals",
+      "status": "planned",
+      "path": "nodes/topics/triple_integrals.md",
+      "tags": [
+        "calculus",
+        "module:MA1029"
+      ]
+    },
+    {
+      "id": "discrete_mathematics",
+      "type": "Domain",
+      "name": "Discrete Mathematics",
+      "status": "planned",
+      "path": "nodes/domains/discrete_mathematics.md",
+      "tags": [
+        "math"
+      ]
+    },
+    {
+      "id": "matrix_algebra_topic",
+      "type": "Topic",
+      "name": "Matrix Algebra",
+      "status": "planned",
+      "path": "nodes/topics/matrix_algebra_topic.md",
+      "tags": [
+        "linear_algebra",
+        "module:TC1003B"
+      ]
+    },
+    {
+      "id": "propositional_logic",
+      "type": "Topic",
+      "name": "Propositional Logic",
+      "status": "planned",
+      "path": "nodes/topics/propositional_logic.md",
+      "tags": [
+        "logic",
+        "module:TC1003B"
+      ]
+    },
+    {
+      "id": "predicate_logic",
+      "type": "Topic",
+      "name": "Predicate Logic",
+      "status": "planned",
+      "path": "nodes/topics/predicate_logic.md",
+      "tags": [
+        "logic",
+        "module:TC1003B"
+      ]
+    },
+    {
+      "id": "proof_methods",
+      "type": "Topic",
+      "name": "Mathematical Proof Methods",
+      "status": "planned",
+      "path": "nodes/topics/proof_methods.md",
+      "tags": [
+        "math",
+        "module:TC1003B"
+      ]
+    },
+    {
+      "id": "numerical_solution_of_linear_systems",
+      "type": "Topic",
+      "name": "Numerical Solution of Linear Systems",
+      "status": "planned",
+      "path": "nodes/topics/numerical_solution_of_linear_systems.md",
+      "tags": [
+        "numerical",
+        "module:TC1003B"
+      ]
+    },
+    {
+      "id": "experimental_physics",
+      "type": "Domain",
+      "name": "Experimental Physics",
+      "status": "planned",
+      "path": "nodes/domains/experimental_physics.md",
+      "tags": [
+        "experimental"
+      ]
+    },
+    {
+      "id": "central_tendency_and_dispersion",
+      "type": "Topic",
+      "name": "Central Tendency & Dispersion",
+      "status": "planned",
+      "path": "nodes/topics/central_tendency_and_dispersion.md",
+      "tags": [
+        "statistics",
+        "module:F1008"
+      ]
+    },
+    {
+      "id": "pressure_and_hydrostatic_pressure",
+      "type": "Topic",
+      "name": "Pressure & Hydrostatic Pressure",
+      "status": "planned",
+      "path": "nodes/topics/pressure_and_hydrostatic_pressure.md",
+      "tags": [
+        "fluids",
+        "module:F1008"
+      ]
+    },
+    {
+      "id": "experimental_setup_and_design",
+      "type": "Topic",
+      "name": "Experimental Setup and Design",
+      "status": "planned",
+      "path": "nodes/topics/experimental_setup_and_design.md",
+      "tags": [
+        "experimental",
+        "module:F1008"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "mathematical_modeling_topic",
+      "relation": "BELONGS_TO",
+      "to": "mathematical_modeling"
+    },
+    {
+      "from": "ellipse_equations",
+      "relation": "BELONGS_TO",
+      "to": "mathematical_modeling"
+    },
+    {
+      "from": "keplers_laws",
+      "relation": "BELONGS_TO",
+      "to": "classical_mechanics"
+    },
+    {
+      "from": "newtons_laws_of_motion",
+      "relation": "BELONGS_TO",
+      "to": "classical_mechanics"
+    },
+    {
+      "from": "static_equilibrium",
+      "relation": "BELONGS_TO",
+      "to": "classical_mechanics"
+    },
+    {
+      "from": "torque",
+      "relation": "BELONGS_TO",
+      "to": "classical_mechanics"
+    },
+    {
+      "from": "force_analysis",
+      "relation": "BELONGS_TO",
+      "to": "classical_mechanics"
+    },
+    {
+      "from": "linear_regression",
+      "relation": "BELONGS_TO",
+      "to": "data_analysis"
+    },
+    {
+      "from": "non_linear_regression",
+      "relation": "BELONGS_TO",
+      "to": "data_analysis"
+    },
+    {
+      "from": "data_visualization",
+      "relation": "BELONGS_TO",
+      "to": "data_analysis"
+    },
+    {
+      "from": "process_modeling",
+      "relation": "BELONGS_TO",
+      "to": "process_engineering"
+    },
+    {
+      "from": "average_and_instantaneous_velocity_and_acceleration",
+      "relation": "BELONGS_TO",
+      "to": "classical_mechanics"
+    },
+    {
+      "from": "piecewise_functions",
+      "relation": "BELONGS_TO",
+      "to": "mathematical_modeling"
+    },
+    {
+      "from": "vector_functions",
+      "relation": "BELONGS_TO",
+      "to": "mathematical_modeling"
+    },
+    {
+      "from": "vectors_and_kinematics_one_two_dimensions",
+      "relation": "BELONGS_TO",
+      "to": "classical_mechanics"
+    },
+    {
+      "from": "circular_motion",
+      "relation": "BELONGS_TO",
+      "to": "classical_mechanics"
+    },
+    {
+      "from": "air_resistance",
+      "relation": "BELONGS_TO",
+      "to": "classical_mechanics"
+    },
+    {
+      "from": "simple_harmonic_motion",
+      "relation": "BELONGS_TO",
+      "to": "classical_mechanics"
+    },
+    {
+      "from": "euler_method",
+      "relation": "BELONGS_TO",
+      "to": "numerical_methods"
+    },
+    {
+      "from": "power_functions_and_their_derivatives",
+      "relation": "BELONGS_TO",
+      "to": "applied_mathematics"
+    },
+    {
+      "from": "antiderivatives",
+      "relation": "BELONGS_TO",
+      "to": "applied_mathematics"
+    },
+    {
+      "from": "optimization",
+      "relation": "BELONGS_TO",
+      "to": "applied_mathematics"
+    },
+    {
+      "from": "concavity_and_inflection_points",
+      "relation": "BELONGS_TO",
+      "to": "applied_mathematics"
+    },
+    {
+      "from": "introduction_to_c_plus_plus",
+      "relation": "BELONGS_TO",
+      "to": "programming_fundamentals"
+    },
+    {
+      "from": "structured_data_in_c_plus_plus",
+      "relation": "BELONGS_TO",
+      "to": "programming_fundamentals"
+    },
+    {
+      "from": "control_structures",
+      "relation": "BELONGS_TO",
+      "to": "programming_fundamentals"
+    },
+    {
+      "from": "functions_topic",
+      "relation": "BELONGS_TO",
+      "to": "programming_fundamentals"
+    },
+    {
+      "from": "oop_concepts",
+      "relation": "BELONGS_TO",
+      "to": "object_oriented_programming"
+    },
+    {
+      "from": "class_modeling_from_scenarios",
+      "relation": "BELONGS_TO",
+      "to": "software_design"
+    },
+    {
+      "from": "class_implementation_in_c_plus_plus",
+      "relation": "BELONGS_TO",
+      "to": "software_design"
+    },
+    {
+      "from": "uml_diagrams",
+      "relation": "BELONGS_TO",
+      "to": "software_design"
+    },
+    {
+      "from": "r_fundamentals",
+      "relation": "BELONGS_TO",
+      "to": "data_analysis_with_r"
+    },
+    {
+      "from": "molecular_biology_and_genomics_basics",
+      "relation": "BELONGS_TO",
+      "to": "genomics_and_molecular_biology"
+    },
+    {
+      "from": "dna_replication_transcription_translation",
+      "relation": "BELONGS_TO",
+      "to": "genomics_and_molecular_biology"
+    },
+    {
+      "from": "biological_databases",
+      "relation": "BELONGS_TO",
+      "to": "bioinformatics"
+    },
+    {
+      "from": "viruses_and_viral_genomes",
+      "relation": "BELONGS_TO",
+      "to": "genomics_and_molecular_biology"
+    },
+    {
+      "from": "literature_search_and_critical_reading",
+      "relation": "BELONGS_TO",
+      "to": "bioinformatics"
+    },
+    {
+      "from": "sequence_alignment",
+      "relation": "BELONGS_TO",
+      "to": "bioinformatics"
+    },
+    {
+      "from": "phylogenetics",
+      "relation": "BELONGS_TO",
+      "to": "bioinformatics"
+    },
+    {
+      "from": "correlation_vs_causation",
+      "relation": "BELONGS_TO",
+      "to": "statistics"
+    },
+    {
+      "from": "correlation_coefficients",
+      "relation": "BELONGS_TO",
+      "to": "statistics"
+    },
+    {
+      "from": "time_series_basics",
+      "relation": "BELONGS_TO",
+      "to": "time_series"
+    },
+    {
+      "from": "electrostatics",
+      "relation": "BELONGS_TO",
+      "to": "electromagnetism_domain"
+    },
+    {
+      "from": "coulombs_law",
+      "relation": "BELONGS_TO",
+      "to": "electromagnetism_domain"
+    },
+    {
+      "from": "electric_field",
+      "relation": "BELONGS_TO",
+      "to": "electromagnetism_domain"
+    },
+    {
+      "from": "electric_potential",
+      "relation": "BELONGS_TO",
+      "to": "electromagnetism_domain"
+    },
+    {
+      "from": "gauss_law",
+      "relation": "BELONGS_TO",
+      "to": "electromagnetism_domain"
+    },
+    {
+      "from": "capacitance_and_dielectrics",
+      "relation": "BELONGS_TO",
+      "to": "electromagnetism_domain"
+    },
+    {
+      "from": "circuit_elements",
+      "relation": "BELONGS_TO",
+      "to": "electromagnetism_domain"
+    },
+    {
+      "from": "kirchhoffs_laws",
+      "relation": "BELONGS_TO",
+      "to": "electromagnetism_domain"
+    },
+    {
+      "from": "rk4",
+      "relation": "BELONGS_TO",
+      "to": "differential_equations"
+    },
+    {
+      "from": "higher_order_differential_equations",
+      "relation": "BELONGS_TO",
+      "to": "differential_equations"
+    },
+    {
+      "from": "numerical_vs_analytical_solutions",
+      "relation": "BELONGS_TO",
+      "to": "differential_equations"
+    },
+    {
+      "from": "magnetism_fundamentals",
+      "relation": "BELONGS_TO",
+      "to": "differential_equations"
+    },
+    {
+      "from": "magnetic_field_current_carrying_conductor",
+      "relation": "BELONGS_TO",
+      "to": "differential_equations"
+    },
+    {
+      "from": "surface_and_line_integrals",
+      "relation": "BELONGS_TO",
+      "to": "differential_equations"
+    },
+    {
+      "from": "scalar_functions_of_several_variables",
+      "relation": "BELONGS_TO",
+      "to": "multivariable_calculus"
+    },
+    {
+      "from": "coordinate_systems",
+      "relation": "BELONGS_TO",
+      "to": "multivariable_calculus"
+    },
+    {
+      "from": "partial_derivatives",
+      "relation": "BELONGS_TO",
+      "to": "multivariable_calculus"
+    },
+    {
+      "from": "total_differential",
+      "relation": "BELONGS_TO",
+      "to": "multivariable_calculus"
+    },
+    {
+      "from": "chain_rule_multivariable",
+      "relation": "BELONGS_TO",
+      "to": "multivariable_calculus"
+    },
+    {
+      "from": "directional_derivative",
+      "relation": "BELONGS_TO",
+      "to": "multivariable_calculus"
+    },
+    {
+      "from": "gradient",
+      "relation": "BELONGS_TO",
+      "to": "multivariable_calculus"
+    },
+    {
+      "from": "constrained_optimization",
+      "relation": "BELONGS_TO",
+      "to": "multivariable_calculus"
+    },
+    {
+      "from": "double_integrals",
+      "relation": "BELONGS_TO",
+      "to": "multivariable_calculus"
+    },
+    {
+      "from": "triple_integrals",
+      "relation": "BELONGS_TO",
+      "to": "multivariable_calculus"
+    },
+    {
+      "from": "matrix_algebra_topic",
+      "relation": "BELONGS_TO",
+      "to": "discrete_mathematics"
+    },
+    {
+      "from": "propositional_logic",
+      "relation": "BELONGS_TO",
+      "to": "discrete_mathematics"
+    },
+    {
+      "from": "predicate_logic",
+      "relation": "BELONGS_TO",
+      "to": "discrete_mathematics"
+    },
+    {
+      "from": "proof_methods",
+      "relation": "BELONGS_TO",
+      "to": "discrete_mathematics"
+    },
+    {
+      "from": "numerical_solution_of_linear_systems",
+      "relation": "BELONGS_TO",
+      "to": "discrete_mathematics"
+    },
+    {
+      "from": "central_tendency_and_dispersion",
+      "relation": "BELONGS_TO",
+      "to": "experimental_physics"
+    },
+    {
+      "from": "pressure_and_hydrostatic_pressure",
+      "relation": "BELONGS_TO",
+      "to": "experimental_physics"
+    },
+    {
+      "from": "experimental_setup_and_design",
+      "relation": "BELONGS_TO",
+      "to": "experimental_physics"
+    }
+  ]
+}

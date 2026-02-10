@@ -1,0 +1,8 @@
+edges:
+# -- F1001B edges
+  - from: mathematical_modeling_topic
+    relation: BELONGS_TO
+    to: mathematical_modeling
+
+# complete after adding files in /nodes/<entity>/
+
