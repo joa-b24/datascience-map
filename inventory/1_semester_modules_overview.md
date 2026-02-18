@@ -1,6 +1,6 @@
  # Semestre 1 — Resumen de Módulos (Inventario)
 
-## MÓDULO: F1003B (295340) - diferente plantilla
+## MÓDULO: F1003B (295340)
 ### Aplicación de leyes de conservación en ingeniería de procesos
 
 ### Dominios
@@ -25,7 +25,7 @@
 ---
 
 
-## MÓDULO: F1001B  (295330) - diferente plantilla
+## MÓDULO: F1001B  (295330)
 ### Modelado en ingeniería y ciencias (Avenida de Ciencias Aplicadas)
 
 ### Dominios

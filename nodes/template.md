@@ -20,3 +20,8 @@ relations:
 # Bernoulli equation
 
 (Your notes here, optional.)
+
+
+## Prompt 
+
+“Crea stubs en nodes/topics/ para estos ids. Cada stub debe incluir frontmatter con id, name, status: planned, tags de semester:X y module:CODE-ENDPOINT, y un campo notes.status: missing.”
